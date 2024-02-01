@@ -7,6 +7,26 @@
 
 import Foundation
 
+struct Ingredient {
+    let name: String
+    var quantity: Int
+    var unit: Unit
+    let category: Category
+    let expiryDate: Date
+    
+    func displayProperties() -> String {
+        let properties = """
+Name: \(name)
+Quantity: \(quantity)
+Units: \(unit)
+Category: \(category)
+Expiry Date: \(expiryDate)
+"""
+        return properties
+    }
+}
+
+
 enum Category {
     case Vegetable
     case Fruit
@@ -25,8 +45,10 @@ enum Unit {
 }
 
 struct CurrentIngredient {
-    var ingredients = [Ingredient(name: "Flour", quantity: 200, unit: Unit.Gram, category: Category.Grain, expiryDate: "19/11/2026"),
-                       Ingredient(name: "Milk", quantity: 200, unit: Unit.Mililitre, category: Category.Dairy, expiryDate: "01/02/2024"),
-                       Ingredient(name: "Chicken", quantity: 400, unit: Unit.Gram, category: Category.Meat, expiryDate: "14/03/2024"),
-                       Ingredient(name: "Carrot", quantity: 75, unit: Unit.Gram, category: Category.Vegetable, expiryDate: "29/07/2024")]
+    var ingredients = [Ingredient(name: "Flour", quantity: 200, unit: Unit.Gram, category: Category.Grain, expiryDate: Date(timeIntervalSince1970: 1000000.0)),
+                       Ingredient(name: "Milk", quantity: 200, unit: Unit.Mililitre, category: Category.Dairy, expiryDate: Date(timeIntervalSince1970: 1000000.0)),
+                       Ingredient(name: "Chicken", quantity: 400, unit: Unit.Gram, category: Category.Meat, expiryDate: Date(timeIntervalSince1970: 1000000.0)),
+                       Ingredient(name: "Carrot", quantity: 75, unit: Unit.Gram, category: Category.Vegetable, expiryDate: Date(timeIntervalSince1970:  1000000.0))]
 }
+
+

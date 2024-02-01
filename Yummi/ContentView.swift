@@ -7,24 +7,6 @@
 
 import SwiftUI
 
-struct Ingredient {
-    let name: String
-    var quantity: Int
-    var unit: Unit
-    let category: Category
-    let expiryDate: String
-    
-    func displayProperties() -> String {
-        let properties = """
-Name: \(name)
-Quantity: \(quantity)
-Units: \(unit)
-Category: \(category)
-Expiry Date: \(expiryDate)
-"""
-        return properties
-    }
-}
 
 
 struct ContentView: View {
@@ -78,7 +60,14 @@ struct ContentView: View {
                         Text("Tablespoon").tag(Unit.Tablespoon)
                         Text("Whole").tag(Unit.Whole)
                     }
-                    
+                    DatePicker(
+                    "Date",
+                    selection: $ingredientExpiry,
+                    displayedComponents: [.date]
+                    )
+                    Button("Submit Ingredient", action: {
+                        currentIngredient.ingredients.append(Ingredient(name: ingredientName, quantity: ingredientQuantity, unit: ingredientUnit, category: ingredientCategory, expiryDate: ingredientExpiry))
+                    })
                 }
             }
         }
