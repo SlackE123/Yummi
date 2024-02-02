@@ -14,8 +14,8 @@ struct ContentView: View {
     @State private var index = 0
     @State private var ingredientName = ""
     @State private var ingredientQuantity = 0
-    @State private var ingredientUnit = ""
-    @State private var ingredientCategory = ""
+    @State private var ingredientUnit = Unit.Gram
+    @State private var ingredientCategory = Category.Grain
     @State private var ingredientExpiry = Date()
     
     var body: some View {
