@@ -11,13 +11,17 @@ struct ContentView: View {
     @State private var ingredientsViewShowing = true
     var body: some View {
         VStack{
-            Button("Change View", action: {
-                if ingredientsViewShowing {
-                    ingredientsViewShowing = false
-                } else{
-                    ingredientsViewShowing = true
-                }
-            })
+            HStack {
+                Button("< Change View", action: {
+                    if ingredientsViewShowing {
+                        ingredientsViewShowing = false
+                    } else{
+                        ingredientsViewShowing = true
+                    }
+                })
+                .padding(.horizontal)
+                Spacer()
+            }
                 .bold()
             Spacer()
             if ingredientsViewShowing{

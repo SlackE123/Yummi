@@ -65,9 +65,11 @@ struct IngredientsView: View {
                     selection: $ingredientExpiry,
                     displayedComponents: [.date]
                     )
-                    Button("Submit Ingredient", action: {
-                        currentIngredient.ingredients.append(Ingredient(name: ingredientName, quantity: ingredientQuantity, unit: ingredientUnit, category: ingredientCategory, expiryDate: ingredientExpiry))
-                    })
+                    Section{
+                        Button("Submit Ingredient", action: {
+                            currentIngredient.ingredients.append(Ingredient(name: ingredientName, quantity: ingredientQuantity, unit: ingredientUnit, category: ingredientCategory, expiryDate: ingredientExpiry))
+                        })
+                    }
                 }
             }
         }
