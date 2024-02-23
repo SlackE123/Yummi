@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED3315462B8778AE0055BEB1 /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3315452B8778AE0055BEB1 /* IngredientsView.swift */; };
+		ED3315482B877C4A0055BEB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3315472B877C4A0055BEB1 /* ContentView.swift */; };
 		ED404C8F2B6D540400263847 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED404C8E2B6D540400263847 /* Recipes.swift */; };
 		ED404C912B6D548F00263847 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED404C902B6D548F00263847 /* RecipesView.swift */; };
 		EDD73F8D2B5FC57300A9FC9B /* YummiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD73F8C2B5FC57300A9FC9B /* YummiApp.swift */; };
-		EDD73F8F2B5FC57300A9FC9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD73F8E2B5FC57300A9FC9B /* ContentView.swift */; };
 		EDD73F912B5FC57500A9FC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD73F902B5FC57500A9FC9B /* Assets.xcassets */; };
 		EDD73F942B5FC57500A9FC9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD73F932B5FC57500A9FC9B /* Preview Assets.xcassets */; };
 		EDD73F9E2B5FC57600A9FC9B /* YummiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD73F9D2B5FC57600A9FC9B /* YummiTests.swift */; };
@@ -37,11 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED3315452B8778AE0055BEB1 /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
+		ED3315472B877C4A0055BEB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ED404C8E2B6D540400263847 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
 		ED404C902B6D548F00263847 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		EDD73F892B5FC57300A9FC9B /* Yummi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD73F8C2B5FC57300A9FC9B /* YummiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummiApp.swift; sourceTree = "<group>"; };
-		EDD73F8E2B5FC57300A9FC9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDD73F902B5FC57500A9FC9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD73F932B5FC57500A9FC9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EDD73F992B5FC57600A9FC9B /* YummiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YummiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				ED404C902B6D548F00263847 /* RecipesView.swift */,
-				EDD73F8E2B5FC57300A9FC9B /* ContentView.swift */,
+				ED3315452B8778AE0055BEB1 /* IngredientsView.swift */,
+				ED3315472B877C4A0055BEB1 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,7 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD73FB72B5FC84400A9FC9B /* Current Ingredient.swift in Sources */,
-				EDD73F8F2B5FC57300A9FC9B /* ContentView.swift in Sources */,
+				ED3315462B8778AE0055BEB1 /* IngredientsView.swift in Sources */,
+				ED3315482B877C4A0055BEB1 /* ContentView.swift in Sources */,
 				ED404C912B6D548F00263847 /* RecipesView.swift in Sources */,
 				EDD73F8D2B5FC57300A9FC9B /* YummiApp.swift in Sources */,
 				ED404C8F2B6D540400263847 /* Recipes.swift in Sources */,

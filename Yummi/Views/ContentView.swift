@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var ingredientsViewShowing = true
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Button("Change View", action: {
+                if ingredientsViewShowing {
+                    ingredientsViewShowing = false
+                } else{
+                    ingredientsViewShowing = true
+                }
+            })
+                .bold()
+            Spacer()
+            if ingredientsViewShowing{
+                IngredientsView()
+            } else{
+                RecipesView(recipes: CurrentRecipe().examples)
+            }
+        }
+        
     }
 }
 
