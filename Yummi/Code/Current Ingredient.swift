@@ -27,7 +27,7 @@ Expiry Date: \(expiryDate)
 }
 
 
-enum Category {
+enum Category: String {
     case Vegetable
     case Fruit
     case Grain
@@ -36,7 +36,7 @@ enum Category {
     case Carbohydrates
 }
 
-enum Unit {
+enum Unit: String {
     case Gram
     case Kilogram
     case Mililitre

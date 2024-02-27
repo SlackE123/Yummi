@@ -18,6 +18,7 @@
 		EDD73FA82B5FC57600A9FC9B /* YummiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD73FA72B5FC57600A9FC9B /* YummiUITests.swift */; };
 		EDD73FAA2B5FC57600A9FC9B /* YummiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD73FA92B5FC57600A9FC9B /* YummiUITestsLaunchTests.swift */; };
 		EDD73FB72B5FC84400A9FC9B /* Current Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD73FB62B5FC84400A9FC9B /* Current Ingredient.swift */; };
+		EDE0BB752B8DF09C0026CBF5 /* SpecificRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0BB742B8DF09C0026CBF5 /* SpecificRecipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		EDD73FA72B5FC57600A9FC9B /* YummiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummiUITests.swift; sourceTree = "<group>"; };
 		EDD73FA92B5FC57600A9FC9B /* YummiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EDD73FB62B5FC84400A9FC9B /* Current Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Ingredient.swift"; sourceTree = "<group>"; };
+		EDE0BB742B8DF09C0026CBF5 /* SpecificRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificRecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				ED404C902B6D548F00263847 /* RecipesView.swift */,
+				EDE0BB742B8DF09C0026CBF5 /* SpecificRecipeView.swift */,
 				ED3315452B8778AE0055BEB1 /* IngredientsView.swift */,
 				ED3315472B877C4A0055BEB1 /* ContentView.swift */,
 			);
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE0BB752B8DF09C0026CBF5 /* SpecificRecipeView.swift in Sources */,
 				EDD73FB72B5FC84400A9FC9B /* Current Ingredient.swift in Sources */,
 				ED3315462B8778AE0055BEB1 /* IngredientsView.swift in Sources */,
 				ED3315482B877C4A0055BEB1 /* ContentView.swift in Sources */,
