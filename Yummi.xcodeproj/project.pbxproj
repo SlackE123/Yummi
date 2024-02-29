@@ -11,6 +11,7 @@
 		ED3315482B877C4A0055BEB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3315472B877C4A0055BEB1 /* ContentView.swift */; };
 		ED404C8F2B6D540400263847 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED404C8E2B6D540400263847 /* Recipes.swift */; };
 		ED404C912B6D548F00263847 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED404C902B6D548F00263847 /* RecipesView.swift */; };
+		ED7BC7402B90B443003C5178 /* IngredientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BC73F2B90B443003C5178 /* IngredientsViewModel.swift */; };
 		EDD73F8D2B5FC57300A9FC9B /* YummiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD73F8C2B5FC57300A9FC9B /* YummiApp.swift */; };
 		EDD73F912B5FC57500A9FC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD73F902B5FC57500A9FC9B /* Assets.xcassets */; };
 		EDD73F942B5FC57500A9FC9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD73F932B5FC57500A9FC9B /* Preview Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		ED3315472B877C4A0055BEB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ED404C8E2B6D540400263847 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
 		ED404C902B6D548F00263847 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
+		ED7BC73F2B90B443003C5178 /* IngredientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewModel.swift; sourceTree = "<group>"; };
 		EDD73F892B5FC57300A9FC9B /* Yummi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD73F8C2B5FC57300A9FC9B /* YummiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummiApp.swift; sourceTree = "<group>"; };
 		EDD73F902B5FC57500A9FC9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 			path = Code;
 			sourceTree = "<group>";
 		};
+		ED7BC73E2B90B405003C5178 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED7BC73F2B90B443003C5178 /* IngredientsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EDD73F802B5FC57300A9FC9B = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 		EDD73F8B2B5FC57300A9FC9B /* Yummi */ = {
 			isa = PBXGroup;
 			children = (
+				ED7BC73E2B90B405003C5178 /* ViewModel */,
 				EDD73F8C2B5FC57300A9FC9B /* YummiApp.swift */,
 				ED404C932B6D58FA00263847 /* Code */,
 				ED404C922B6D58ED00263847 /* Views */,
@@ -293,6 +304,7 @@
 				ED3315462B8778AE0055BEB1 /* IngredientsView.swift in Sources */,
 				ED3315482B877C4A0055BEB1 /* ContentView.swift in Sources */,
 				ED404C912B6D548F00263847 /* RecipesView.swift in Sources */,
+				ED7BC7402B90B443003C5178 /* IngredientsViewModel.swift in Sources */,
 				EDD73F8D2B5FC57300A9FC9B /* YummiApp.swift in Sources */,
 				ED404C8F2B6D540400263847 /* Recipes.swift in Sources */,
 			);

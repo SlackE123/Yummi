@@ -34,5 +34,5 @@ struct SpecificRecipeView: View {
 }
 
 #Preview {
-    SpecificRecipeView(recipe: )
+    SpecificRecipeView(recipe: CurrentRecipe().examples[0])
 }

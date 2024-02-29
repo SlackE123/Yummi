@@ -10,28 +10,22 @@ import SwiftUI
 
 
 struct IngredientsView: View {
-    @State private var currentIngredient = CurrentIngredient()
-    @State private var index = 0
-    @State private var ingredientName = ""
-    @State private var ingredientQuantity = 0
-    @State private var ingredientUnit = Unit.Gram
-    @State private var ingredientCategory = Category.Grain
-    @State private var ingredientExpiry = Date()
+    @State var ingredientsViewModel: IngredientsViewModel = IngredientsViewModel()
     
     var body: some View {
         VStack {
             Form {
                 VStack(alignment: .leading, spacing: 20) {
                     
-                    Text(currentIngredient.ingredients[index].displayProperties())
+                    Text(ingredientsViewModel.currentIngredient.ingredients[ingredientsViewModel.index].displayProperties())
                         .padding()
                 }
                 VStack(alignment: .trailing) {
                     Section {
-                        Button("Next Ingredient", action: { if index == currentIngredient.ingredients.count - 1{
-                            index = 0
+                        Button("Next Ingredient", action: { if ingredientsViewModel.index == ingredientsViewModel.currentIngredient.ingredients.count - 1{
+                            ingredientsViewModel.index = 0
                         }   else {
-                            index += 1
+                            ingredientsViewModel.index += 1
                         }
                         }
                         ).frame(maxWidth: .infinity, alignment: .center)}
@@ -41,11 +35,11 @@ struct IngredientsView: View {
                 VStack {
                     Text("Enter A New Ingredient")
                     
-                    TextField("Name", text: $ingredientName)
+                    TextField("Name", text: $ingredientsViewModel.ingredientName)
                     
-                    Stepper("Quantity: \(ingredientQuantity)", value: $ingredientQuantity, in: 0...100)
+                    Stepper("Quantity: \(ingredientsViewModel.ingredientQuantity)", value: $ingredientsViewModel.ingredientQuantity, in: 0...100)
                     
-                    Picker("Category:", selection: $ingredientCategory) {
+                    Picker("Category:", selection: $ingredientsViewModel.ingredientCategory) {
                         Text("Vegetable").tag(Category.Vegetable)
                         Text("Carbohyrdates").tag(Category.Carbohydrates)
                         Text("Fruit").tag(Category.Fruit)
@@ -53,7 +47,7 @@ struct IngredientsView: View {
                         Text("Grain").tag(Category.Grain)
                         Text("Meat").tag(Category.Meat)
                     }
-                    Picker("Unit of Measurement:", selection: $ingredientUnit) {
+                    Picker("Unit of Measurement:", selection: $ingredientsViewModel.ingredientUnit) {
                         Text("Gram").tag(Unit.Gram)
                         Text("Kilogram").tag(Unit.Kilogram)
                         Text("Mililitre").tag(Unit.Mililitre)
@@ -62,12 +56,12 @@ struct IngredientsView: View {
                     }
                     DatePicker(
                     "Date",
-                    selection: $ingredientExpiry,
+                    selection: $ingredientsViewModel.ingredientExpiry,
                     displayedComponents: [.date]
                     )
                     Section{
                         Button("Submit Ingredient", action: {
-                            currentIngredient.ingredients.append(Ingredient(name: ingredientName, quantity: ingredientQuantity, unit: ingredientUnit, category: ingredientCategory, expiryDate: ingredientExpiry))
+                            ingredientsViewModel.addNewIngredient()
                         })
                     }
                 }
