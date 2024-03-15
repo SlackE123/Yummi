@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED2C0DB22BA4B6C000FB9B7E /* SpecificIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C0DB12BA4B6C000FB9B7E /* SpecificIngredientView.swift */; };
 		ED3315462B8778AE0055BEB1 /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3315452B8778AE0055BEB1 /* IngredientsView.swift */; };
 		ED3315482B877C4A0055BEB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3315472B877C4A0055BEB1 /* ContentView.swift */; };
 		ED404C8F2B6D540400263847 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED404C8E2B6D540400263847 /* Recipes.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED2C0DB12BA4B6C000FB9B7E /* SpecificIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificIngredientView.swift; sourceTree = "<group>"; };
 		ED3315452B8778AE0055BEB1 /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
 		ED3315472B877C4A0055BEB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ED404C8E2B6D540400263847 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				EDE0BB742B8DF09C0026CBF5 /* SpecificRecipeView.swift */,
 				ED3315452B8778AE0055BEB1 /* IngredientsView.swift */,
 				ED3315472B877C4A0055BEB1 /* ContentView.swift */,
+				ED2C0DB12BA4B6C000FB9B7E /* SpecificIngredientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				ED7BC7402B90B443003C5178 /* IngredientsViewModel.swift in Sources */,
 				EDD73F8D2B5FC57300A9FC9B /* YummiApp.swift in Sources */,
 				ED404C8F2B6D540400263847 /* Recipes.swift in Sources */,
+				ED2C0DB22BA4B6C000FB9B7E /* SpecificIngredientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

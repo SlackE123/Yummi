@@ -13,22 +13,13 @@ struct IngredientsView: View {
     @State var ingredientsViewModel: IngredientsViewModel = IngredientsViewModel()
     
     var body: some View {
+        var ingredients: [Ingredient]
         VStack {
-            Form {
-                VStack(alignment: .leading, spacing: 20) {
-                    
-                    Text(ingredientsViewModel.currentIngredient.ingredients[ingredientsViewModel.index].displayProperties())
-                        .padding()
-                }
-                VStack(alignment: .trailing) {
-                    Section {
-                        Button("Next Ingredient", action: { if ingredientsViewModel.index == ingredientsViewModel.currentIngredient.ingredients.count - 1{
-                            ingredientsViewModel.index = 0
-                        }   else {
-                            ingredientsViewModel.index += 1
-                        }
-                        }
-                        ).frame(maxWidth: .infinity, alignment: .center)}
+            NavigationStack {
+                List(ingredients, id: \.id) { ingredient in
+                    NavigationLink(destination: SpecificIngredientView(ingredient: ingredient)) {
+                        Text(ingredient.name)
+                    }
                 }
             }
             Form {

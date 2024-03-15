@@ -27,7 +27,7 @@ struct ContentView: View {
             if ingredientsViewShowing{
                 IngredientsView()
             } else{
-                RecipesView(recipes: CurrentRecipe().examples)
+                RecipesView(recipes: Recipe.examples)
             }
         }
         

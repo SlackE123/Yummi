@@ -12,16 +12,16 @@ struct SpecificRecipeView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Image("Egg Fried Rice")
+                Image("\(recipe.name)")
                 
                 Text("Rating: \(recipe.rating)/10").bold()
                 
-                List(CurrentIngredient().ingredients, id: \.name) {ingredient in
+                List(recipe.ingredients, id: \.name) {ingredient in
                     HStack{
                         if ingredient.unit.rawValue == "Whole" {
-                            Text("\(ingredient.quantity) \(ingredient.unit.rawValue) \(ingredient.name)s")
+                            Text("\(ingredient.quantity) \(ingredient.unit.rawValue) \(ingredient.name)")
                         } else {
-                            Text("\(ingredient.quantity) \(ingredient.unit.rawValue)s of \(ingredient.name)")
+                            Text("\(ingredient.quantity) \(ingredient.unit.rawValue) of \(ingredient.name)")
                         }
                     }
                 }
@@ -34,5 +34,5 @@ struct SpecificRecipeView: View {
 }
 
 #Preview {
-    SpecificRecipeView(recipe: CurrentRecipe().examples[0])
+    SpecificRecipeView(recipe: Recipe.example)
 }

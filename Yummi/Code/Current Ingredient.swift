@@ -8,6 +8,7 @@
 import Foundation
 
 struct Ingredient {
+    let id: UUID = UUID()
     let name: String
     var quantity: Int
     var unit: Unit
